@@ -54,9 +54,8 @@ public class BoundaryEventHeadlessTaskService extends HeadlessJsTaskService {
 
         // Notification for the foreground service
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, NOTIFICATION_CHANNEL_ID)
-                .setSmallIcon(R.drawable.common_google_signin_btn_icon_light_normal)
-                .setContentTitle("Geofence Service")
-                .setContentText("You're close to the configured location.")
+                .setContentTitle("Sensafety")
+                .setContentText("Checking if it makes sense to vote...")
                 .setOngoing(true)
                 .setColor(ContextCompat.getColor(context, R.color.accent_material_light));
         Notification notification = builder.build();
